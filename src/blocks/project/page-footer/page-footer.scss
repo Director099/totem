@@ -1,0 +1,36 @@
+.page-footer {
+  display: none;
+  padding-bottom: 5px;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
+}
+
+.page-footer__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-footer__text {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 17px;
+  max-width: 245px;
+  width: 100%;
+
+  color: $white;
+
+  &--link {
+    text-decoration: underline;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

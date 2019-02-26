@@ -1,0 +1,40 @@
+mixin modal()
+  .modal.fade(id="modalform" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal-content
+        button(type="button" class="modal__close" data-dismiss="modal" aria-label="Close")
+        h5.modal__title Есть вопросы? - Задавайте!
+        p.modal__tagline Заполните форму, мы свяжемся:
+        form.form
+          label.field-text
+            input.field-text__input.field-text__input--name(type="text" require="require" placeholder="Введите ваше имя" required)
+          .form__radio
+            p.form__radio-text Выберите удобный способ связи
+            .form__row
+              label.field-radio
+                input.field-radio__input(type="radio" require="require" name="radio" checked="" required)
+                span.field-radio__icon
+                  svg(width="14" height="18")
+                    use(xlink:href="img/symbols.svg#icon-phone")
+              label.field-radio
+                input.field-radio__input(type="radio" require="require" name="radio" required)
+                span.field-radio__icon
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#icon-whatsapp")
+              label.field-radio
+                input.field-radio__input(type="radio" require="require" name="radio" requeried)
+                span.field-radio__icon
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#icon-viber")
+              label.field-radio
+                input.field-radio__input(type="radio" require="require" name="radio" required)
+                span.field-radio__icon
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#icon-telegram")
+            label.field-text
+              input.field-text__input.field-text__input--phone(type="tel" required placeholder="Введите ваш телефон")
+            button.btn.form__btn Заказать звонок
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox" checked="" required)
+              span.field-checkbox__squer(aria-label="Нативный Чекбокс")
+              span.field-checkbox__text Я даю согласие на обработку персональных данных

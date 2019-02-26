@@ -1,0 +1,68 @@
+// В этом файле должны быть стили для БЭМ-блока form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$font-family--headings:       -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+
+$font-size--h3:               rem(24px) !default;
+
+$line-height:                 1.5 !default;
+
+.form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__legend {
+    display: block;
+    width: 100%;
+    max-width: 100%; // Привет IE
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: $font-size--h3;
+    font-family: $font-family--headings;
+    font-weight: 700;
+    line-height: $line-height;
+    white-space: normal; // Привет IE
+    color: currentColor;
+  }
+}
+
+.form__btn {
+  display: block;
+  width: 100%;
+  box-shadow: 0 3px 0 #deaa35;
+  border-radius: 26px;
+  background-image: linear-gradient(to bottom, #ffe393 0%, #f6bf40 100%);
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form__radio-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #828282;
+  margin-bottom: 10px;
+}

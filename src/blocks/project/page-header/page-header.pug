@@ -1,0 +1,13 @@
+mixin page-header()
+  header.page-header
+    .container
+      .page-header__row
+        .page-header__left
+          a.logo(href="/")
+            img(src="img/logo.svg" alt="Aгрегатор предложений по светодиодным системам отображения среди российских и иностранных производителей.")
+          p.page-header__tagline Aгрегатор предложений по&nbsp;светодиодным системам отображения среди российских и&nbsp;иностранных производителей.
+        .page-header__right
+          .callback
+            span.callback__text Для консультации
+            a.callback__link(href="tel:+7(4852)950-335") +7 (4852) 950-335
+          button.btn.page-header__btn(data-toggle="modal" data-target="#modalform") Заказать звонок

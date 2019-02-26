@@ -1,0 +1,33 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+
+block content
+  .fullpage
+    +page-header()
+    main
+    .container
+      .main-block
+        h1.main-block__title Узнайте стоимость #[span вашего будущего #[b видеоэкрана] за&nbsp;1&nbsp;минуту]
+        .main-block__reverse
+          ul.main-block__list
+            li.main-block__item
+              .advantages
+                strong.advantages__name на 18%
+                p.advantages__text цена дешевле рыночной за&nbsp;счет собственного производства
+            li.main-block__item
+              .advantages
+                strong.advantages__name 5 лет
+                p.advantages__text срок гарантии на&nbsp;монтажные работы и&nbsp;оборудование
+            li.main-block__item
+              .advantages
+                strong.advantages__name > 600
+                p.advantages__text различных видов информационных систем
+          p.main-block__text Ответьте на&nbsp;5&nbsp;вопросов и&nbsp;получите #[span персональное предложение] по&nbsp;светодиодным системам отображения
+        .main-block__btn-wrap
+          a.btn.main-block__btn(href="#") Узнать стоимость видеоэкрана
+          p.main-block__present Получить подарок после теста
+            span(aria-label="Декоративная иконка плюса")
+    +page-footer()
+

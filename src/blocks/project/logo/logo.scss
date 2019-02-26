@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  margin-top: 7px;
+
+  @media (min-width: $screen-xl) {
+    max-width: 185px;
+    margin-top: 0;
+    width: 100%;
+  }
+}
