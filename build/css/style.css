@@ -1922,6 +1922,9 @@ input:checked ~ .field-radio__name-text:after {
 .page-footer__text--link {
     text-decoration: underline; }
 
+.page-footer__text--link:hover {
+      color: white; }
+
 .page-footer__text--right {
     text-align: right; }
 
@@ -1931,7 +1934,7 @@ input:checked ~ .field-radio__name-text:after {
 .fullpage {
   min-height: 100vh;
   background: url("../img/fullpage-bg-mb-sec.png"), url("../img/fullpage-bg-mb.jpg");
-  background-position: 50% 258px, center;
+  background-position: 50% 95%, center;
   background-repeat: no-repeat;
   background-size: 260px, cover; }
 
@@ -1966,6 +1969,9 @@ input:checked ~ .field-radio__name-text:after {
   font-weight: 400; }
 
 .main-block {
+  position: relative;
+  min-height: 510px;
+  height: calc(100vh - 94px);
   max-width: 590px;
   margin: 0 auto; }
 
@@ -1984,6 +1990,9 @@ input:checked ~ .field-radio__name-text:after {
   color: #00abfb; }
 
 .main-block__list {
+  position: absolute;
+  bottom: 79px;
+  left: 0;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -2025,8 +2034,14 @@ input:checked ~ .field-radio__name-text:after {
   background-image: linear-gradient(to bottom, #54b9e5 0%, #1059c6 100%);
   z-index: 2; }
 
+.main-block__btn:hover {
+    color: white; }
+
 .main-block__btn-wrap {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   padding-bottom: 23px; }
 
@@ -3682,6 +3697,7 @@ input:checked ~ .field-radio__name-text:after {
   }
 
   .main-block {
+    height: auto;
     margin-bottom: 122px;
     margin-left: 0;
   }
@@ -3695,6 +3711,9 @@ input:checked ~ .field-radio__name-text:after {
   }
 
   .main-block__list {
+    position: relative;
+    bottom: 0;
+    left: 0;
     margin-bottom: 46px;
   }
 
@@ -3728,6 +3747,7 @@ input:checked ~ .field-radio__name-text:after {
   }
 
   .main-block__btn-wrap {
+    position: relative;
     display: flex;
     align-items: flex-start;
     margin-bottom: 100px;

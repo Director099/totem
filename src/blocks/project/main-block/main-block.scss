@@ -1,8 +1,12 @@
 .main-block {
+  position: relative;
+  min-height: 510px;
+  height: calc(100vh - 94px);
   max-width: 590px;
   margin: 0 auto;
 
   @media (min-width: $screen-xl) {
+    height: auto;
     margin-bottom: 122px;
     margin-left: 0;
   }
@@ -36,6 +40,9 @@
 }
 
 .main-block__list {
+  position: absolute;
+  bottom: 79px;
+  left: 0;
   @include ul-none();
 
   display: flex;
@@ -43,6 +50,9 @@
   justify-content: space-between;
 
   @media (min-width: $screen-xl) {
+    position: relative;
+    bottom: 0;
+    left: 0;
     margin-bottom: 46px;
   }
 }
@@ -114,6 +124,10 @@
   background-image: linear-gradient(to bottom, #54b9e5 0%, #1059c6 100%);
   z-index: 2;
 
+  &:hover {
+    color: $white;
+  }
+
   @media (min-width: $screen-xl) {
     font-size: 21px;
     font-weight: 600;
@@ -123,11 +137,15 @@
 }
 
 .main-block__btn-wrap {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   padding-bottom: 23px;
 
   @media (min-width: $screen-xl) {
+    position: relative;
     display: flex;
     align-items: flex-start;
     margin-bottom: 100px;

@@ -24,6 +24,10 @@
 
   &--link {
     text-decoration: underline;
+
+    &:hover {
+      color: $white;
+    }
   }
 
   &--right {
