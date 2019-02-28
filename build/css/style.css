@@ -1929,10 +1929,10 @@ input:checked ~ .field-radio__name-text:after {
 
 .fullpage {
   min-height: 100vh;
-  background: url("../img/fullpage-bg-mb-sec.png"), url("../img/fullpage-bg-mb.jpg");
-  background-position: 50% 65%, center;
+  background: url("../img/fullpage-bg-mb.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 260px, cover; }
+  background-size: cover; }
 
 .logo {
   display: block;
@@ -1967,7 +1967,7 @@ input:checked ~ .field-radio__name-text:after {
 .main-block {
   position: relative;
   min-height: 510px;
-  height: calc(100vh - 213px);
+  height: calc(100vh - 83px);
   max-width: 590px;
   margin: 0 auto; }
 
@@ -2083,6 +2083,16 @@ input:checked ~ .field-radio__name-text:after {
   width: 7px;
   height: 7px;
   background: url("../img/add.svg") no-repeat center; }
+
+.main-block__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  max-width: 380px;
+  width: 100%; }
 
 .callback {
   padding-left: 30px;
@@ -3802,6 +3812,10 @@ input:checked ~ .field-radio__name-text:after {
     left: 13px;
     width: 10px;
     height: 10px;
+  }
+
+  .main-block__img {
+    display: none;
   }
 
   .callback {
