@@ -1,7 +1,7 @@
 .main-block {
   position: relative;
   min-height: 510px;
-  height: calc(100vh - 94px);
+  height: calc(100vh - 213px);
   max-width: 590px;
   margin: 0 auto;
 
@@ -41,7 +41,7 @@
 
 .main-block__list {
   position: absolute;
-  bottom: 79px;
+  bottom: 99px;
   left: 0;
   @include ul-none();
 
@@ -142,7 +142,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  padding-bottom: 23px;
+  padding-bottom: 43px;
 
   @media (min-width: $screen-xl) {
     position: relative;
